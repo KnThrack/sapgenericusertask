@@ -24,7 +24,7 @@ sap.ui.define([
 			var taskData = taskModel.getData();
 			var taskId = taskData.InstanceID;
 
-			// initialize model
+			// initialize model g
 			var contextModel = new JSONModel("/bpmworkflowruntime/rest/v1/task-instances/" + taskId + "/context")
 				.attachRequestCompleted(function(oEvent) {
 					// Create an array of property/value pairs for generic display in the UI
